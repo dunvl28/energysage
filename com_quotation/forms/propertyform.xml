@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Energyquotation\Component\Quotation\Site\Field">
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" type="hidden" filter="unset"/>
+    <field name="ip" size="20" filter="safehtml" type="text" label="COM_QUOTATION_FORM_LBL_PROPERTY_IP" description="COM_QUOTATION_FORM_DESC_PROPERTY_IP" hint="COM_QUOTATION_FORM_LBL_PROPERTY_IP"/>
+    <field name="property_type" default="Home" type="radio" required="true" message="Please select what type of property do you want quotes for?" label="COM_QUOTATION_FORM_LBL_PROPERTY_PROPERTY_TYPE" description="COM_QUOTATION_FORM_DESC_PROPERTY_PROPERTY_TYPE" hint="COM_QUOTATION_FORM_LBL_PROPERTY_PROPERTY_TYPE">
+      <option value="Home">COM_QUOTATION_PROPERTIES_PROPERTY_TYPE_OPTION_HOME</option>
+      <option value="Business">COM_QUOTATION_PROPERTIES_PROPERTY_TYPE_OPTION_BUSINESS</option>
+      <option value="Nonprofit">COM_QUOTATION_PROPERTIES_PROPERTY_TYPE_OPTION_NONPROFIT</option>
+    </field>
+    <field name="property_owner" type="radio" required="true" message="Do you own or rent this home?" label="COM_QUOTATION_FORM_LBL_PROPERTY_PROPERTY_OWNER" description="COM_QUOTATION_FORM_DESC_PROPERTY_PROPERTY_OWNER" hint="COM_QUOTATION_FORM_LBL_PROPERTY_PROPERTY_OWNER">
+      <option value="I own">COM_QUOTATION_PROPERTIES_PROPERTY_OWNER_OPTION_I_OWN</option>
+      <option value="I rent">COM_QUOTATION_PROPERTIES_PROPERTY_OWNER_OPTION_I_RENT</option>
+    </field>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

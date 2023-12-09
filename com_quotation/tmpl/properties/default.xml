@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_QUOTATION_TITLE_LIST_VIEW_PROPERTIES" option="View">
+        <message>
+                        <![CDATA[COM_QUOTATION_TITLE_LIST_VIEW_PROPERTIES_DESC]]>
+        </message>
+	</layout>
+	
+</metadata>
